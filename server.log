@@ -1,0 +1,787 @@
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3010
+   - Network:      http://192.168.1.223:3010
+
+ ✓ Starting...
+ ✓ Ready in 629.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.7s (1424 modules)
+ GET / 200 in 7351ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 514ms (781 modules)
+ ✓ Compiled in 5.6s (1422 modules)
+ GET /favicon.ico 200 in 6410ms
+ GET /login 200 in 6452ms
+ GET /dashboard 200 in 6297ms
+ ○ Compiling /finance ...
+ ✓ Compiled /finance in 4.9s (3476 modules)
+ GET /finance 200 in 6374ms
+ ○ Compiling /api/stats ...
+ ✓ Compiled /api/stats in 15.9s (3483 modules)
+ GET /favicon.ico 200 in 19636ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/stats?type=dashboard&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 23827ms
+ GET /api/stats?type=dashboard&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 5268ms
+ ○ Compiling /orders ...
+ ✓ Compiled /stock in 85.8s (3665 modules)
+ GET /@vite/client 404 in 42693ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 40279ms
+ GET /finance 200 in 22269ms
+ GET /finance 200 in 80825ms
+ GET /finance 200 in 15865ms
+ GET /orders 200 in 93605ms
+ GET /stock 200 in 24297ms
+ GET /api/health 200 in 18ms
+ GET /stock 200 in 252ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 65ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 48ms
+ GET /favicon.ico 200 in 89ms
+ GET /api/health 200 in 56ms
+ GET /api/health 200 in 51ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 10.4s (3591 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/products?search=&category=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 13780ms
+ GET /finance 200 in 13793ms
+ GET /api/products?search=&category=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 3722ms
+ GET /finance 200 in 7326ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 134ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 233ms
+ GET /api/health 200 in 60ms
+ GET /api/health 200 in 61ms
+ ○ Compiling /settings ...
+ ✓ Compiled /favicon.ico in 20.1s (3655 modules)
+ GET /api/health 200 in 1924ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 12762ms
+ GET /favicon.ico 200 in 16700ms
+ GET /settings 200 in 22698ms
+ ○ Compiling /api/settings ...
+ ✓ Compiled /api/settings in 2.7s (3655 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/settings?type=system&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 3188ms
+ GET /api/settings?type=system&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 103ms
+ ○ Compiling /orders ...
+ ✓ Compiled /orders in 3s (1967 modules)
+ GET /api/health 200 in 116ms
+ GET /orders 200 in 3393ms
+ GET /api/health 200 in 54ms
+ GET /settings 200 in 623ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1156ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2011ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1670ms
+ GET /api/health 200 in 2107ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2373ms
+ GET /api/settings?type=system&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 117ms
+ GET /api/settings?type=system&userId=usr_23dc3b1168f44ca9b134e0d6831c361d 200 in 92ms
+ GET /favicon.ico 200 in 82ms
+ GET /api/health 200 in 44ms
+ GET /api/health 200 in 59ms
+ GET /api/health 200 in 41ms
+ GET /api/health 200 in 43ms
+ GET /api/health 200 in 52ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 9.2s (1945 modules)
+ GET /login 200 in 9840ms
+ GET /api/health 200 in 160ms
+ GET /stock 200 in 137ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 1324ms (1947 modules)
+ ✓ Compiled (1971 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/products?search=&category=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 4588ms
+ GET /favicon.ico 200 in 4666ms
+ GET /api/products?search=&category=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 90ms
+ GET /api/health 200 in 50ms
+ POST /api/products 201 in 86ms
+ GET /api/products?search=&category=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 76ms
+ ○ Compiling /clients ...
+ ✓ Compiled /clients in 4.4s (3167 modules)
+ GET /clients 200 in 5166ms
+ GET /api/health 200 in 85ms
+ ○ Compiling /api/clients ...
+ ✓ Compiled /api/clients in 2s (3169 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2378ms
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 104ms
+ GET /api/health 200 in 62ms
+ POST /api/clients 201 in 63ms
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 65ms
+ GET /api/health 200 in 42ms
+ POST /api/clients 201 in 57ms
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 50ms
+ GET /api/health 200 in 76ms
+ POST /api/clients 201 in 63ms
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 61ms
+ POST /api/clients 201 in 68ms
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 54ms
+ GET /orders 200 in 263ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/products in 3.3s (1417 modules)
+ ✓ Compiled (1419 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 5359ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 5360ms
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 3662ms
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 3723ms
+ GET /api/health 200 in 974ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 569ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 563ms
+ GET /api/health 200 in 229ms
+ ○ Compiling /api/auth ...
+ ✓ Compiled /api/auth in 8.8s (3163 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ POST /api/auth 200 in 9416ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 9.2s (1978 modules)
+ ✓ Compiled in 1ms (1978 modules)
+ ✓ Compiled in 1ms (1978 modules)
+ ✓ Compiled in 1ms (1978 modules)
+ GET /api/health 200 in 12644ms
+ GET /dashboard 200 in 13875ms
+ ✓ Compiled in 1ms (1978 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ POST /api/orders 201 in 6095ms
+ ✓ Compiled in 1ms (1978 modules)
+ GET /api/health 200 in 4966ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1799ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1807ms
+ ○ Compiling /api/stats ...
+ ✓ Compiled /api/stats in 2.9s (1980 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/stats?type=dashboard&userId=usr_admin 200 in 3052ms
+ PUT /api/orders 200 in 89ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 52ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 94ms
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 156ms
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 222ms
+ GET /api/health 200 in 499ms
+ POST /api/orders 201 in 116ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 89ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 146ms
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 74ms
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 117ms
+ POST /api/orders 201 in 104ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 76ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 152ms
+ GET /api/health 200 in 54ms
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1050ms
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1064ms
+ GET /api/health 200 in 63ms
+ POST /api/orders 201 in 105ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 61ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 133ms
+ ○ Compiling /finance ...
+ ✓ Compiled /finance in 1963ms (1427 modules)
+ GET /finance 200 in 2667ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 83ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 34ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 63ms
+ GET /api/health 200 in 99ms
+ GET /api/health 200 in 50ms
+ GET /api/health 200 in 205ms
+ GET /orders 200 in 490ms
+ GET /orders 200 in 479ms
+ GET /api/health 200 in 654ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 100ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 176ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 174ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 206ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 5.2s (1416 modules)
+ GET /favicon.ico 200 in 5425ms
+ GET /api/health 200 in 53ms
+ GET /orders 200 in 280ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 167ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 230ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 125ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 125ms
+ PUT /api/orders 200 in 50ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 70ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 128ms
+ PUT /api/orders 200 in 59ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 63ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 131ms
+ GET /api/health 200 in 44ms
+ PUT /api/orders 200 in 57ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 66ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 129ms
+ PUT /api/orders 200 in 61ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 183ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 334ms
+ GET /api/health 200 in 105ms
+ GET /finance 200 in 134ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 37ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 19ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-10&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 15ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-11&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 18ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 18ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-11&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 21ms
+ GET /api/health 200 in 11ms
+ GET /api/health 200 in 51ms
+ GET /api/health 200 in 43ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 13ms
+ GET /api/health 200 in 37ms
+ GET /api/health 200 in 55ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 19ms
+ ✓ Compiled in 1553ms (1390 modules)
+ GET /api/health 200 in 78ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 14ms
+ ✓ Compiled in 6.8s (3132 modules)
+ ✓ Compiled /api/orders in 298ms (1414 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 627ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 630ms
+ GET /finance 200 in 654ms
+ GET /orders 200 in 655ms
+ ✓ Compiled in 1961ms (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 427ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 429ms
+ ✓ Compiled in 3.3s (3156 modules)
+ ✓ Compiled in 0ms (1414 modules)
+ GET /api/health 200 in 2385ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 983ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1009ms
+ ✓ Compiled in 2.1s (3156 modules)
+ ✓ Compiled in 1ms (1414 modules)
+ ✓ Compiled in 1ms (1414 modules)
+ GET /api/health 200 in 1334ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 1967ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1962ms
+ ✓ Compiled in 1930ms (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 490ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 643ms
+ GET /api/health 200 in 20ms
+ ✓ Compiled in 3.2s (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 733ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 734ms
+ ✓ Compiled in 2s (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 468ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 471ms
+ ✓ Compiled in 1984ms (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 772ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 774ms
+ GET /api/health 200 in 106ms
+ ✓ Compiled in 2.2s (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 84ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 105ms
+ GET /api/health 200 in 45ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 32ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 14ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 4.9s (3132 modules)
+ ✓ Compiled (3156 modules)
+ GET /api/health 200 in 2038ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 1735ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1730ms
+ ✓ Compiled in 2.6s (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 693ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 695ms
+ ✓ Compiled in 2.4s (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 120ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 134ms
+ GET /api/health 200 in 19ms
+ GET /api/health 200 in 30ms
+ GET /clients 200 in 611ms
+ ○ Compiling /api/clients ...
+ ✓ Compiled /api/clients in 1939ms (1416 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2301ms
+ GET /api/clients?search=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 357ms
+ GET /orders 200 in 697ms
+ GET /clients 200 in 702ms
+ GET /api/health 200 in 51ms
+ GET /api/health 200 in 85ms
+ GET /orders 200 in 77ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 42ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 66ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 42ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 37ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 1998ms (1418 modules)
+ ✓ Compiled in 1631ms (1418 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 4218ms
+ ✓ Compiled in 2ms (1418 modules)
+ ✓ Compiled in 6ms (1418 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 9150ms
+ GET /orders 200 in 10280ms
+ GET /orders 200 in 10284ms
+ GET /orders 200 in 201ms
+ GET /orders 200 in 235ms
+ GET /api/health 200 in 66ms
+ ✓ Compiled in 1654ms (1418 modules)
+ GET /orders 200 in 488ms
+ GET /orders 200 in 467ms
+ GET /api/health 200 in 30ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ PUT /api/orders 200 in 824ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 43ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 68ms
+ ✓ Compiled in 15.4s (3160 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ PUT /api/orders 200 in 12747ms
+ PUT /api/orders 200 in 8585ms
+ PUT /api/orders 200 in 2860ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 36ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 50ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 31ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 89ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 114ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 199ms
+ ✓ Compiled in 4s (3160 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ PUT /api/orders 200 in 207ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 44ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 80ms
+ GET /api/health 200 in 54ms
+ GET /finance 200 in 275ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 28ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 28ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 15ms
+ GET /api/health 200 in 55ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 21ms
+ GET /api/health 200 in 84ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 29ms
+ GET /api/health 200 in 27ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 20ms
+ GET /api/health 200 in 24ms
+ GET /api/health 200 in 42ms
+ GET /api/health 200 in 19ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 25ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 27ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 22ms
+ GET /api/health 200 in 21ms
+ GET /api/health 200 in 19ms
+ GET /api/health 200 in 55ms
+ GET /api/health 200 in 23ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 18ms
+ ✓ Compiled /api/orders in 6s (3132 modules)
+ ✓ Compiled (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2301ms
+ GET /api/health 200 in 4871ms
+ GET /api/health 200 in 33ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 19ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 17ms
+ ✓ Compiled in 7.2s (3132 modules)
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 875ms (1414 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2201ms
+ GET /api/health 200 in 1916ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 20ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 23ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 26ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 13ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 74ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 49ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 24ms
+ GET /api/health 200 in 27ms
+ GET /api/health 200 in 100ms
+ GET /api/health 200 in 47ms
+ GET /api/health 200 in 13ms
+ GET /api/health 200 in 20ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 25ms
+ GET /api/health 200 in 27ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 27ms
+ ✓ Compiled in 2.1s (1390 modules)
+ GET /api/health 200 in 1130ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 27ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 18ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 22ms
+ GET /api/health 200 in 28ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 23ms
+ GET /api/health 200 in 22ms
+ GET /api/health 200 in 22ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 21ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 15ms
+ GET /api/health 200 in 21ms
+ GET /api/health 200 in 14ms
+ GET /api/health 200 in 20ms
+ ✓ Compiled in 3.5s (3132 modules)
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 1072ms (1414 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1444ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 1457ms
+ GET /finance 200 in 812ms
+ GET /orders 200 in 817ms
+ GET /api/health 200 in 86ms
+ GET /api/health 200 in 15ms
+ GET /orders 200 in 173ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 32ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 88ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 40ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 34ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 1626ms (1416 modules)
+ ✓ Compiled in 4ms (1418 modules)
+ ✓ Compiled in 1ms (1418 modules)
+ ✓ Compiled in 1ms (1418 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 7569ms
+ ✓ Compiled in 0ms (1418 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 10111ms
+ GET /api/health 200 in 5636ms
+ GET /orders 200 in 8544ms
+ GET /orders 200 in 8568ms
+ ✓ Compiled in 28ms (1418 modules)
+ ✓ Compiled in 2ms (1418 modules)
+ ✓ Compiled in 1ms (1418 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 12978ms
+ ✓ Compiled in 1ms (1418 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 12748ms
+ GET /orders 200 in 12604ms
+ GET /orders 200 in 9103ms
+ GET /api/health 200 in 4739ms
+ GET /api/health 200 in 37ms
+ ✓ Compiled in 4s (3160 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 2200ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2198ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 2202ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 2215ms
+ GET /api/health 200 in 18ms
+ ✓ Compiled in 2.1s (3160 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 2200ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1887ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 1886ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 2212ms
+ GET /api/health 200 in 26ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 21ms
+ GET /api/health 200 in 31ms
+ GET /api/health 200 in 22ms
+ GET /api/health 200 in 20ms
+ ✓ Compiled /api/orders in 5.8s (3132 modules)
+ ✓ Compiled (3156 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 6917ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 4696ms
+ GET /api/orders?stats=true&userId=usr_admin 200 in 4696ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 6960ms
+ GET /api/health 200 in 453ms
+ GET /finance 200 in 255ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 31ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 19ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 20ms
+ GET /api/health 200 in 34ms
+ GET /api/health 200 in 16ms
+ GET /api/health 200 in 17ms
+ GET /api/health 200 in 23ms
+ GET /api/health 200 in 21ms
+ ✓ Compiled in 5s (3132 modules)
+ ✓ Compiled /api/orders in 304ms (1414 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 498ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 510ms
+ ○ Compiling /_error ...
+ GET /api/health 500 in 5178ms
+ ✓ Compiled /_error in 9.4s (3502 modules)
+ GET /finance 200 in 5794ms
+ GET /orders 200 in 5780ms
+ GET /finance 200 in 287ms
+ GET /orders 200 in 301ms
+ GET /api/health 500 in 284ms
+ GET /api/health 500 in 255ms
+ ✓ Compiled in 3.9s (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 476ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 488ms
+ GET /api/health 500 in 316ms
+ GET /api/health 500 in 275ms
+ GET /api/health 500 in 271ms
+ GET /api/health 500 in 278ms
+ GET /api/health 500 in 269ms
+ ✓ Compiled /api/orders in 5.9s (3478 modules)
+ ✓ Compiled (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1439ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 1451ms
+ GET /api/health 500 in 277ms
+ GET /api/health 500 in 281ms
+ GET /api/health 500 in 254ms
+ GET /api/health 500 in 272ms
+ ✓ Compiled /api/orders in 5.6s (3478 modules)
+ ✓ Compiled (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1189ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 1207ms
+ GET /api/health 500 in 298ms
+ GET /api/health 500 in 286ms
+ GET /api/health 500 in 264ms
+ GET /api/health 500 in 285ms
+ GET /api/health 500 in 285ms
+ GET /api/health 500 in 5009ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 10s (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 1421ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 1425ms
+ GET /api/health 500 in 262ms
+ GET /api/health 500 in 256ms
+ GET /api/health 500 in 259ms
+ ✓ Compiled in 5.1s (3478 modules)
+ ✓ Compiled /api/orders in 339ms (1608 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?stats=true&userId=usr_admin 200 in 457ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_admin 200 in 458ms
+ GET /api/health 500 in 283ms
+ GET /api/health 500 in 263ms
+ GET /api/health 500 in 262ms
+ GET /api/health 500 in 274ms
+ GET /api/health 500 in 284ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 261ms
+ GET /api/health 500 in 271ms
+ GET /api/health 500 in 275ms
+ ✓ Compiled in 1026ms (1584 modules)
+ GET /api/health 500 in 299ms
+ GET /api/health 500 in 252ms
+ GET /api/health 500 in 256ms
+ GET /api/health 500 in 276ms
+ GET /api/health 500 in 271ms
+ GET /api/health 500 in 282ms
+ GET /api/health 500 in 264ms
+ GET /api/health 500 in 273ms
+ GET /api/health 500 in 268ms
+ GET /api/health 500 in 267ms
+ GET /api/health 500 in 284ms
+ GET /api/health 500 in 271ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 256ms
+ GET /api/health 500 in 263ms
+ GET /api/health 500 in 286ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 271ms
+ ✓ Compiled in 7s (3478 modules)
+ GET /finance 500 in 3551ms
+ ✓ Compiled in 1845ms (3478 modules)
+ GET /api/health 500 in 372ms
+ ○ Compiling /api/orders ...
+ GET /api/health 200 in 5027ms
+ ✓ Compiled /_not-found in 20.4s (3507 modules)
+ GET /@vite/client 404 in 18276ms
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 22178ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 241ms
+ GET /orders 200 in 2045ms
+ GET /finance 200 in 2055ms
+ GET /api/health 500 in 283ms
+ GET /api/health 500 in 265ms
+ ✓ Compiled in 3.4s (3507 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 3345ms
+ GET /api/health 500 in 290ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 264ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 7.6s (3478 modules)
+ ✓ Compiled (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 7432ms
+ GET /api/health 500 in 778ms
+ GET /api/health 500 in 269ms
+ GET /api/health 500 in 254ms
+ GET /api/health 500 in 260ms
+ GET /api/health 500 in 285ms
+ GET /api/health 500 in 493ms
+ GET /orders 200 in 326ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 10s (3478 modules)
+ ✓ Compiled (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 3554ms
+ GET /orders 200 in 7991ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 40ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 63ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 56ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 58ms
+ ○ Compiling /api/products ...
+ ✓ Compiled /api/products in 3.2s (1610 modules)
+ ✓ Compiled (1612 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/clients?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 5145ms
+ GET /api/products?limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 5219ms
+ GET /api/health 500 in 3515ms
+ GET /api/health 500 in 290ms
+ GET /api/health 500 in 255ms
+ GET /api/health 500 in 270ms
+ GET /api/health 500 in 300ms
+ GET /api/health 500 in 280ms
+ GET /api/health 500 in 273ms
+ GET /api/health 500 in 273ms
+ GET /api/health 500 in 267ms
+ GET /api/health 500 in 263ms
+ GET /api/health 500 in 272ms
+ GET /api/health 500 in 271ms
+ GET /api/health 500 in 273ms
+ GET /api/health 500 in 273ms
+ GET /api/health 500 in 276ms
+ GET /api/health 500 in 265ms
+ GET /api/health 500 in 264ms
+ ✓ Compiled in 4.9s (3478 modules)
+ GET /api/health 500 in 286ms
+ GET /api/health 500 in 252ms
+ GET /api/health 500 in 267ms
+ GET /api/health 500 in 287ms
+ ✓ Compiled in 7s (3478 modules)
+ GET /api/health 500 in 964ms
+ GET /api/health 500 in 277ms
+ GET /api/health 500 in 259ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 254ms
+ GET /api/health 500 in 272ms
+ GET /api/health 500 in 276ms
+ GET /api/health 500 in 254ms
+ GET /api/health 500 in 278ms
+ GET /api/health 500 in 266ms
+ GET /api/health 500 in 276ms
+ GET /api/health 500 in 257ms
+ GET /api/health 500 in 280ms
+ GET /api/health 500 in 271ms
+ GET /api/health 500 in 255ms
+ GET /api/health 500 in 253ms
+ GET /api/health 500 in 292ms
+ GET /api/health 500 in 254ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 1280ms (1608 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ PUT /api/orders 200 in 1406ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 22ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 38ms
+ PUT /api/orders 200 in 58ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 54ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 93ms
+ PUT /api/orders 200 in 51ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 57ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 106ms
+ GET /api/health 500 in 276ms
+ GET /api/health 500 in 258ms
+ PUT /api/orders 200 in 45ms
+ GET /api/orders?stats=true&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 78ms
+ GET /api/orders?search=&status=&type=&dateFrom=&dateTo=&deliveryDateFrom=&deliveryDateTo=&page=1&limit=25&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 113ms
+ GET /finance 200 in 391ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 22ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 22ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=e 200 in 23ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=ed 200 in 43ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=edd 200 in 36ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-08&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=eddy 200 in 16ms
+ GET /api/health 500 in 269ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=eddy 200 in 24ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 47ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=p 200 in 20ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pa 200 in 19ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pas 200 in 62ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pasc 200 in 100ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pasca 200 in 112ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pascam 200 in 89ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pasca 200 in 22ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pascal 200 in 20ms
+ GET /api/health 500 in 273ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pasca 200 in 17ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pasc 200 in 59ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pas 200 in 48ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=pa 200 in 48ms
+ GET /api/health 500 in 604ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=p 200 in 19ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d 200 in 19ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=e 200 in 18ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=ed 200 in 49ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=edd 200 in 48ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=eddy 200 in 22ms
+ GET /api/health 500 in 272ms
+ GET /api/health 500 in 287ms
+ GET /api/health 500 in 328ms
+ GET /api/health 500 in 262ms
+ GET /api/health 500 in 416ms
+ GET /api/health 500 in 681ms
+ GET /api/health 500 in 259ms
+ GET /api/health 500 in 262ms
+ GET /api/health 500 in 321ms
+ GET /api/health 500 in 436ms
+ GET /orders 500 in 919ms
+ ○ Compiling /api/orders ...
+ ✓ Compiled /api/orders in 48.4s (3502 modules)
+ GET /orders 500 in 49425ms
+ GET /api/orders?deliveryDateFrom=2026-03-08&deliveryDateTo=2026-03-12&limit=1000&userId=usr_70cdb1eb05db49ccb7a41d4821588b8d&deliveryPerson=eddy 200 in 31090ms
+ ✓ Compiled in 6.6s (3502 modules)
+Opening database at: C:\john\Vente en ligne\data\vente-en-ligne.db
+ GET /api/health 500 in 20724ms
+ ✓ Compiled in 1547ms (3502 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 7.7s (3507 modules)
+ GET /@vite/client 404 in 11030ms
+ GET /orders 500 in 6343ms
+ GET /api/health 500 in 302ms
+ GET /@vite/client 500 in 6214ms
+ GET /api/health 500 in 105ms
+ GET /api/health 500 in 82ms

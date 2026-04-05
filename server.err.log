@@ -1,0 +1,934 @@
+[Error: ENOENT: no such file or directory, stat 'C:\john\Vente en ligne\.next\cache\webpack\server-development\5.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\john\\Vente en ligne\\.next\\cache\\webpack\\server-development\\5.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat 'C:\john\Vente en ligne\.next\cache\webpack\server-development\5.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\john\\Vente en ligne\\.next\\cache\\webpack\\server-development\\5.pack.gz'
+}
+ ⨯ unhandledRejection:  [Error: ENOENT: no such file or directory, stat 'C:\john\Vente en ligne\.next\cache\webpack\server-development\5.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\john\\Vente en ligne\\.next\\cache\\webpack\\server-development\\5.pack.gz'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat 'C:\john\Vente en ligne\.next\cache\webpack\server-development\3.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat 'C:\john\Vente en ligne\.next\cache\webpack\server-development\3.pack.gz'
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: deliveryPersonFilter is not defined
+    at FinancePage (src\app\finance\page.tsx:165:40)
+  163 |                                 label="Filtrer par livreur"
+  164 |                                 size="small"
+> 165 |                                 value={deliveryPersonFilter}
+      |                                        ^
+  166 |                                 onChange={(e) => setDeliveryPersonFilter(e.target.value)}
+  167 |                                 placeholder="Nom du livreur"
+  168 |                                 sx={{ width: 200 }} {
+  digest: '3724112781'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\orders\page.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\orders\\page.js',
+  page: '/orders'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\orders\page.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\orders\\page.js',
+  page: '/orders'
+}
+Watchpack Error (stats): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (stats): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\orders\page.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\orders\\page.js',
+  page: '/orders'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app\api\health\route.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app\\api\\health\\route.js',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app-paths-manifest.json'
+}
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app-paths-manifest.json',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\pages-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\pages-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\app-paths-manifest.json',
+  page: '/api/health'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\john\Vente en ligne\.next\server\pages-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\john\\Vente en ligne\\.next\\server\\pages-manifest.json'
+}
