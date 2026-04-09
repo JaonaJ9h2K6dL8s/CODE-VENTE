@@ -51,7 +51,7 @@ export default function DashboardPage() {
     try {
       if (!selectedUserId) return;
       startDataLoading();
-      const res = await fetch(`/api/stats?type=dashboard&userId=${selectedUserId}`);
+      const res = await fetch(`/api/stats?type=dashboard&userId=${selectedUserId}`, { cache: 'no-store' });
       const data = await res.json();
       if (!res.ok) {
         throw new Error(data?.error || 'Erreur serveur');

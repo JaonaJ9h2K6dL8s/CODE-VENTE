@@ -142,6 +142,7 @@ function initializeDatabase(db: Database.Database) {
       unit TEXT DEFAULT '',
       imageUrl TEXT DEFAULT '',
       isActive INTEGER DEFAULT 1,
+      isSpecialOffer INTEGER DEFAULT 0,
       createdAt TEXT NOT NULL DEFAULT (datetime('now')),
       updatedAt TEXT NOT NULL DEFAULT (datetime('now'))
     );
@@ -361,6 +362,38 @@ function initializeDatabase(db: Database.Database) {
       FOREIGN KEY (orderId) REFERENCES orders(id) ON DELETE CASCADE
     );
 
+    CREATE TABLE IF NOT EXISTS special_offers (
+      id TEXT PRIMARY KEY,
+      userId TEXT NOT NULL DEFAULT '',
+      productId TEXT NOT NULL,
+      variantId TEXT NOT NULL,
+      name TEXT NOT NULL,
+      subtotalAmount REAL NOT NULL DEFAULT 0,
+      discountAmount REAL NOT NULL DEFAULT 0,
+      finalAmount REAL NOT NULL DEFAULT 0,
+      createdBy TEXT DEFAULT '',
+      createdAt TEXT NOT NULL DEFAULT (datetime('now')),
+      updatedAt TEXT NOT NULL DEFAULT (datetime('now')),
+      FOREIGN KEY (productId) REFERENCES products(id) ON DELETE CASCADE,
+      FOREIGN KEY (variantId) REFERENCES product_variants(id) ON DELETE CASCADE
+    );
+
+    CREATE TABLE IF NOT EXISTS special_offer_items (
+      id TEXT PRIMARY KEY,
+      offerId TEXT NOT NULL,
+      productId TEXT NOT NULL,
+      productName TEXT NOT NULL,
+      variantId TEXT NOT NULL,
+      variantSize TEXT DEFAULT '',
+      variantColor TEXT DEFAULT '',
+      quantity INTEGER NOT NULL DEFAULT 1,
+      unitPrice REAL NOT NULL DEFAULT 0,
+      totalPrice REAL NOT NULL DEFAULT 0,
+      FOREIGN KEY (offerId) REFERENCES special_offers(id) ON DELETE CASCADE,
+      FOREIGN KEY (productId) REFERENCES products(id),
+      FOREIGN KEY (variantId) REFERENCES product_variants(id)
+    );
+
   `);
 
   // Seed default admin user if none exists
@@ -413,6 +446,9 @@ function initializeDatabase(db: Database.Database) {
   }
   if (!productColNames.includes('isActive')) {
     db.exec(`ALTER TABLE products ADD COLUMN isActive INTEGER DEFAULT 1`);
+  }
+  if (!productColNames.includes('isSpecialOffer')) {
+    db.exec(`ALTER TABLE products ADD COLUMN isSpecialOffer INTEGER DEFAULT 0`);
   }
   if (!productColNames.includes('createdAt')) {
     db.exec(`ALTER TABLE products ADD COLUMN createdAt TEXT NOT NULL DEFAULT ''`);
@@ -805,6 +841,10 @@ function initializeDatabase(db: Database.Database) {
   db.exec(`CREATE INDEX IF NOT EXISTS idx_pending_deliveries_payment ON pending_deliveries(paymentStatus)`);
   db.exec(`CREATE INDEX IF NOT EXISTS idx_pending_deliveries_limit_date ON pending_deliveries(limitDate)`);
   db.exec(`CREATE INDEX IF NOT EXISTS idx_pending_deliveries_created ON pending_deliveries(createdAt)`);
+
+  db.exec(`CREATE INDEX IF NOT EXISTS idx_special_offers_user ON special_offers(userId)`);
+  db.exec(`CREATE INDEX IF NOT EXISTS idx_special_offers_product ON special_offers(productId)`);
+  db.exec(`CREATE INDEX IF NOT EXISTS idx_special_offer_items_offer ON special_offer_items(offerId)`);
 }
 
 function migrateDatabase(db: Database.Database) {

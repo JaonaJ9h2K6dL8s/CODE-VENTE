@@ -14,6 +14,7 @@ import {
     Search,
 } from '@mui/icons-material';
 import {
+    Alert,
     Box,
     Button,
     Card, CardContent,
@@ -45,6 +46,21 @@ interface VariantForm {
   price: number;
   stock: number;
   sku: string;
+}
+
+interface SpecialOfferDetails {
+  id: string;
+  productId: string;
+  bundleQuantity: number;
+  items: Array<{
+    id: string;
+    productName: string;
+    variantSize: string;
+    variantColor: string;
+    quantity: number;
+    unitPrice: number;
+    totalPrice: number;
+  }>;
 }
 
 const emptyVariant: VariantForm = { size: '', color: '', price: 0, stock: 0, sku: '' };
@@ -121,6 +137,7 @@ export default function ProductsPage() {
   const [productToDelete, setProductToDelete] = useState<Product | null>(null);
   const [sizeDialogOpen, setSizeDialogOpen] = useState(false);
   const [sizeDialogProduct, setSizeDialogProduct] = useState<Product | null>(null);
+  const [specialOfferByProductId, setSpecialOfferByProductId] = useState<Record<string, SpecialOfferDetails>>({});
 
   const getErrorMessage = useCallback((error: unknown, fallback: string) => {
     if (error instanceof Error) return error.message;
@@ -132,13 +149,23 @@ export default function ProductsPage() {
     setLoading(true);
     startDataLoading();
     try {
-      const res = await fetch(`/api/products?search=${debouncedSearch}&category=${filterCategory}&page=${page + 1}&limit=${rowsPerPage}&userId=${selectedUserId}`);
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error(data?.error || 'Erreur serveur');
+      const [productsRes, offersRes] = await Promise.all([
+        fetch(`/api/products?search=${debouncedSearch}&category=${filterCategory}&page=${page + 1}&limit=${rowsPerPage}&userId=${selectedUserId}`),
+        fetch(`/api/special-offers?mode=offers&userId=${selectedUserId}`),
+      ]);
+      const data = await productsRes.json();
+      const offersData = await offersRes.json();
+      if (!productsRes.ok || !offersRes.ok) {
+        throw new Error(data?.error || offersData?.error || 'Erreur serveur');
       }
       setProducts(Array.isArray(data.products) ? data.products : []);
       setTotal(typeof data.total === 'number' ? data.total : 0);
+      const offers = Array.isArray(offersData.offers) ? (offersData.offers as SpecialOfferDetails[]) : [];
+      const byProductId: Record<string, SpecialOfferDetails> = {};
+      offers.forEach((offer) => {
+        byProductId[offer.productId] = offer;
+      });
+      setSpecialOfferByProductId(byProductId);
       setDataError(null);
     } catch (error) {
       enqueueSnackbar('Erreur de chargement', { variant: 'error' });
@@ -318,6 +345,36 @@ export default function ProductsPage() {
               <Grid size={12}>
                 <TextField fullWidth label="Description" value={description} onChange={(e) => setDescription(e.target.value)} multiline rows={2} />
               </Grid>
+
+              {editingProduct && specialOfferByProductId[editingProduct.id] && (
+                <Grid size={12}>
+                  <Alert severity="info" sx={{ mb: 1 }}>
+                    Cette offre spéciale contient {specialOfferByProductId[editingProduct.id].bundleQuantity} articles au total.
+                  </Alert>
+                  <TableContainer sx={{ border: '1px solid', borderColor: 'divider', borderRadius: 1 }}>
+                    <Table size="small">
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>Article du pack</TableCell>
+                          <TableCell align="center">Qté</TableCell>
+                          <TableCell align="right">P.U</TableCell>
+                          <TableCell align="right">Total</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {specialOfferByProductId[editingProduct.id].items.map((item) => (
+                          <TableRow key={item.id}>
+                            <TableCell>{item.productName} ({item.variantSize} {item.variantColor})</TableCell>
+                            <TableCell align="center">{item.quantity}</TableCell>
+                            <TableCell align="right">{Number(item.unitPrice || 0).toLocaleString('fr-FR')} MGA</TableCell>
+                            <TableCell align="right">{Number(item.totalPrice || 0).toLocaleString('fr-FR')} MGA</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Grid>
+              )}
 
               <Grid size={12}>
                 <Divider sx={{ my: 1 }} />

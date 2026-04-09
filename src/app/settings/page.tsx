@@ -18,6 +18,7 @@ import {
     History,
     Info,
     Inventory2,
+    PhoneAndroid,
     LightMode,
     People,
     PersonAdd,
@@ -243,6 +244,30 @@ export default function SettingsPage() {
       enqueueSnackbar('Données exportées', { variant: 'success' });
     } catch { enqueueSnackbar('Erreur export', { variant: 'error' }); }
     finally { setActionLoading(false); }
+  };
+
+  const handleExportMobileData = async () => {
+    setActionLoading(true);
+    try {
+      if (!selectedUserId) { enqueueSnackbar('Utilisateur requis', { variant: 'error' }); return; }
+      const res = await fetch(`/api/settings?type=mobileExport&userId=${selectedUserId}`);
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data?.error || 'Erreur serveur');
+      }
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `vente-mobile-export-${new Date().toISOString().split('T')[0]}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      enqueueSnackbar('Export mobile généré', { variant: 'success' });
+    } catch {
+      enqueueSnackbar('Erreur export mobile', { variant: 'error' });
+    } finally {
+      setActionLoading(false);
+    }
   };
 
   const handlePurgeCancelled = async () => {
@@ -894,6 +919,20 @@ export default function SettingsPage() {
                       <Grid size={{ xs: 12, sm: 4 }}>
                         <Box sx={{ p: 2, border: 1, borderColor: 'divider', borderRadius: 2, textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                           <Box>
+                            <PhoneAndroid sx={{ fontSize: 40, color: 'info.main', mb: 1 }} />
+                            <Typography variant="subtitle2" fontWeight={700}>Exporter vers mobile</Typography>
+                            <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 2 }}>
+                              Génère un fichier JSON pour l&apos;application mobile
+                            </Typography>
+                          </Box>
+                          <Button variant="outlined" color="info" startIcon={<PhoneAndroid />} onClick={handleExportMobileData} disabled={actionLoading} fullWidth>
+                            Export mobile
+                          </Button>
+                        </Box>
+                      </Grid>
+                      <Grid size={{ xs: 12, sm: 4 }}>
+                        <Box sx={{ p: 2, border: 1, borderColor: 'divider', borderRadius: 2, textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                          <Box>
                             <DeleteSweep sx={{ fontSize: 40, color: 'warning.main', mb: 1 }} />
                             <Typography variant="subtitle2" fontWeight={700}>Purger annulées</Typography>
                             <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1 }}>
@@ -929,7 +968,7 @@ export default function SettingsPage() {
                             <Delete sx={{ fontSize: 40, color: 'error.main', mb: 1 }} />
                             <Typography variant="subtitle2" fontWeight={700}>Supprimer toutes les données</Typography>
                             <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1 }}>
-                              Nettoyage complet (clients, produits, commandes, stock, production)
+                              Nettoyage complet (clients, produits, commandes, stock, production, CA mensuel et top produits)
                             </Typography>
                           </Box>
                           <Button variant="contained" color="error" startIcon={<Delete />}
@@ -1066,7 +1105,7 @@ export default function SettingsPage() {
           <DialogTitle sx={{ color: 'error.main' }}>⚠️ Suppression totale des données</DialogTitle>
           <DialogContent>
             <Alert severity="warning" sx={{ mb: 2 }}>
-              Cette action supprime toutes les données (clients, produits, commandes, stocks, mouvements, production).
+              Cette action supprime toutes les données (clients, produits, commandes, stocks, mouvements, production, CA mensuel et produits les plus vendus).
             </Alert>
             <Typography variant="body2">Confirmer la suppression totale ?</Typography>
           </DialogContent>

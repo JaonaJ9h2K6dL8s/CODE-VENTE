@@ -81,6 +81,11 @@ interface OrderItemForm {
   quantity: number;
 }
 
+interface SpecialOfferRow {
+  productId: string;
+  bundleQuantity?: number;
+}
+
 const DELIVERY_FEE = 4000;
 
 const RECEIPT_TEMPLATE_STYLES: Record<ReceiptTemplate, {
@@ -177,6 +182,7 @@ export default function LiveSalesPage() {
   const [allowedVariantIds, setAllowedVariantIds] = useState<Set<string>>(new Set());
   const [allowedOutQuantities, setAllowedOutQuantities] = useState<Record<string, number>>({});
   const [sessionOrders, setSessionOrders] = useState<Order[]>([]);
+  const [offerBundleQtyByProductId, setOfferBundleQtyByProductId] = useState<Record<string, number>>({});
 
   // Form state
   const [selectedClient, setSelectedClient] = useState<Client | string | null>(null);
@@ -185,12 +191,17 @@ export default function LiveSalesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [elapsedTime, setElapsedTime] = useState('00:00:00');
   const lastSilentRefreshRef = useRef(0);
+  const getRealItemQuantity = useCallback((productId: string, quantity: number) => {
+    const bundleQty = Number(offerBundleQtyByProductId[productId] || 0);
+    return bundleQty > 0 ? quantity * bundleQty : quantity;
+  }, [offerBundleQtyByProductId]);
+
   const totalItemsLive = useMemo(() => {
     return sessionOrders.reduce((sum, order) => {
       const items = order.items || [];
-      return sum + items.reduce((acc, item) => acc + item.quantity, 0);
+      return sum + items.reduce((acc, item) => acc + getRealItemQuantity(item.productId, item.quantity), 0);
     }, 0);
-  }, [sessionOrders]);
+  }, [sessionOrders, getRealItemQuantity]);
   const clientOptions = useMemo(() => {
     const seen = new Set<string>();
     const uniqueClients: Client[] = [];
@@ -240,11 +251,12 @@ export default function LiveSalesPage() {
       if (!silent) {
         setLoading(true);
       }
-      const [sessionRes, clientsRes, productsRes, pastSessionsRes] = await Promise.all([
+      const [sessionRes, clientsRes, productsRes, pastSessionsRes, specialOffersRes] = await Promise.all([
         fetch(`/api/live-sales?active=true&userId=${selectedUserId}`),
         fetch(`/api/clients?limit=1000&userId=${selectedUserId}`),
         fetch(`/api/products?limit=1000&userId=${selectedUserId}`),
         fetch(`/api/live-sales?active=false&userId=${selectedUserId}`),
+        fetch(`/api/special-offers?mode=offers&userId=${selectedUserId}`),
       ]);
 
       const sessionData = await sessionRes.json();
@@ -261,9 +273,18 @@ export default function LiveSalesPage() {
       const clientsData = await clientsRes.json();
       const productsData = await productsRes.json();
       const pastSessionsData = await pastSessionsRes.json();
+      const specialOffersData = await specialOffersRes.json();
       if (clientsRes.ok) setClients(clientsData.clients || []);
       if (productsRes.ok) setProducts(productsData.products || []);
       if (pastSessionsRes.ok) setPastSessions(pastSessionsData || []);
+      if (specialOffersRes.ok) {
+        const offers = Array.isArray(specialOffersData.offers) ? (specialOffersData.offers as SpecialOfferRow[]) : [];
+        const map: Record<string, number> = {};
+        offers.forEach((offer) => {
+          map[offer.productId] = Math.max(1, Number(offer.bundleQuantity || 0));
+        });
+        setOfferBundleQtyByProductId(map);
+      }
       const productList = Array.isArray(productsData.products) ? productsData.products : [];
       const availableMap: Record<string, number> = {};
       const variantIds: string[] = [];
@@ -519,7 +540,7 @@ export default function LiveSalesPage() {
       }
       groups[key].orders.push(order);
       groups[key].totalAmount += order.totalAmount;
-      groups[key].itemCount += (order.items || []).reduce((sum, item) => sum + item.quantity, 0);
+      groups[key].itemCount += (order.items || []).reduce((sum, item) => sum + getRealItemQuantity(item.productId, item.quantity), 0);
       if (new Date(order.createdAt) > new Date(groups[key].lastOrderTime)) {
         groups[key].lastOrderTime = order.createdAt;
       }
@@ -545,7 +566,7 @@ export default function LiveSalesPage() {
         ...group,
         clientNumber: numberByKey.get(group.key) ?? 0,
       }));
-  }, [viewSessionOrders]);
+  }, [viewSessionOrders, getRealItemQuantity]);
 
   const handleExportZip = async () => {
     if (!groupedViewOrders.length || !viewSessionDetails) return;
@@ -1020,7 +1041,7 @@ export default function LiveSalesPage() {
       
       groups[key].orders.push(order);
       groups[key].totalAmount += order.totalAmount;
-      groups[key].itemCount += (order.items || []).reduce((sum, item) => sum + item.quantity, 0);
+      groups[key].itemCount += (order.items || []).reduce((sum, item) => sum + getRealItemQuantity(item.productId, item.quantity), 0);
       
       if (new Date(order.createdAt) > new Date(groups[key].lastOrderTime)) {
         groups[key].lastOrderTime = order.createdAt;
@@ -1044,7 +1065,7 @@ export default function LiveSalesPage() {
         ...group,
         clientNumber: numberByKey.get(group.key) ?? 0,
       }));
-  }, [sessionOrders]);
+  }, [sessionOrders, getRealItemQuantity]);
 
   const [expandedClient, setExpandedClient] = useState<string | null>(null);
 
@@ -1383,7 +1404,7 @@ export default function LiveSalesPage() {
                                                       {new Date(order.createdAt).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}
                                                     </TableCell>
                                                     <TableCell>
-                                                      {order.items?.map(i => `${i.quantity}x ${i.productName}`).join(', ')}
+                                                      {order.items?.map((i) => `${getRealItemQuantity(i.productId, i.quantity)}x ${i.productName}`).join(', ')}
                                                     </TableCell>
                                                     <TableCell align="right">{order.totalAmount.toLocaleString('fr-FR')} Ar</TableCell>
                                                     <TableCell align="center">

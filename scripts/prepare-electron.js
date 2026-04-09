@@ -69,6 +69,14 @@ if (!fs.existsSync(standaloneNodeModulesPath)) {
 // Copy native modules and critical dependencies to standalone/node_modules
 // This mimics standard Node.js resolution better than runtime_modules
 const dependenciesToCopy = [
+  'next',
+  '@next/env',
+  'caniuse-lite',
+  'browserslist',
+  'electron-to-chromium',
+  'node-releases',
+  'update-browserslist-db',
+  'baseline-browser-mapping',
   'better-sqlite3',
   'bindings',
   'prebuild-install',
@@ -108,6 +116,56 @@ if (fs.existsSync(buildStandalonePath)) {
 
 console.log('📁 Préparation du dossier standalone pour Electron...');
 copyDirSync(standalonePath, buildStandalonePath);
+
+// Keep a Node.js-runtime binary for standalone server (Node 24),
+// while root node_modules can stay Electron-compatible for main process.
+const electronCompiledNode = path.join(
+  __dirname,
+  '..',
+  'node_modules',
+  'better-sqlite3',
+  'build',
+  'Release',
+  'better_sqlite3.node'
+);
+const nodeRuntimeBackup = `${electronCompiledNode}.bak`;
+const standaloneBetterSqlite = path.join(
+  buildStandalonePath,
+  'node_modules',
+  'better-sqlite3',
+  'build',
+  'Release',
+  'better_sqlite3.node'
+);
+if (fs.existsSync(nodeRuntimeBackup) && fs.existsSync(standaloneBetterSqlite)) {
+  console.log('🔁 Restauration binaire better-sqlite3 (Node runtime) pour standalone...');
+  fs.copyFileSync(nodeRuntimeBackup, standaloneBetterSqlite);
+}
+
+// Ensure entrypoint exists for Electron runtime.
+// Some Next.js builds may not generate .next/standalone/server.js.
+const standaloneServerPath = path.join(buildStandalonePath, 'server.js');
+if (!fs.existsSync(standaloneServerPath)) {
+  console.log('🛠️ Génération d\'un server.js fallback...');
+  const fallbackServerContent = `const http = require('http');
+const next = require('next');
+
+const port = parseInt(process.env.PORT || '3010', 10);
+const hostname = process.env.HOSTNAME || '127.0.0.1';
+const app = next({ dev: false, dir: __dirname, hostname, port });
+const handle = app.getRequestHandler();
+
+app.prepare().then(() => {
+  http.createServer((req, res) => handle(req, res)).listen(port, hostname, () => {
+    console.log(\`> Ready on http://\${hostname}:\${port}\`);
+  });
+}).catch((err) => {
+  console.error('Failed to start Next.js fallback server:', err);
+  process.exit(1);
+});
+`;
+  fs.writeFileSync(standaloneServerPath, fallbackServerContent, 'utf8');
+}
 
 if (!fs.existsSync(embeddedNodeDir)) {
   fs.mkdirSync(embeddedNodeDir, { recursive: true });

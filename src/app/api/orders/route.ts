@@ -80,9 +80,19 @@ export async function GET(request: NextRequest) {
 
         // Filtered stats (products sold)
         let productSoldQuery = `
-          SELECT COALESCE(SUM(oi.quantity), 0) as total 
-          FROM order_items oi 
-          JOIN orders o ON oi.orderId = o.id 
+          SELECT COALESCE(SUM(
+            CASE
+              WHEN so.id IS NOT NULL THEN oi.quantity * COALESCE((
+                SELECT SUM(soi.quantity)
+                FROM special_offer_items soi
+                WHERE soi.offerId = so.id
+              ), 1)
+              ELSE oi.quantity
+            END
+          ), 0) as total
+          FROM order_items oi
+          JOIN orders o ON oi.orderId = o.id
+          LEFT JOIN special_offers so ON so.productId = oi.productId AND so.userId = o.userId
           WHERE o.userId = ? AND o.status != 'cancelled'
         `;
         const productSoldParams: (string | number)[] = [userId];

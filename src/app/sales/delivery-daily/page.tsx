@@ -391,6 +391,40 @@ export default function DeliveryDailyStatsPage() {
     XLSX.writeFile(workbook, `rapport_financier_${dateFrom}_${dateTo}.xlsx`);
   };
 
+  const handleExportMobile = async () => {
+    if (!selectedUserId) {
+      enqueueSnackbar('Utilisateur requis', { variant: 'error' });
+      return;
+    }
+    try {
+      const params = new URLSearchParams({
+        type: 'mobileExport',
+        userId: selectedUserId,
+        source: 'delivery-daily',
+        dateFrom,
+        dateTo,
+        deliveryPerson: deliveryPersonFilter || '',
+        realizedStatus: realizedStatusFilter,
+        clientSearch: clientSearch || '',
+      });
+      const res = await fetch(`/api/settings?${params.toString()}`);
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data?.error || 'Erreur export mobile');
+      }
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `vente-mobile-delivery-${dateFrom}-${dateTo}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      enqueueSnackbar('Export mobile généré', { variant: 'success' });
+    } catch (error) {
+      enqueueSnackbar(getErrorMessage(error, 'Erreur export mobile'), { variant: 'error' });
+    }
+  };
+
   const handleExportConfirmPdf = async () => {
     if (confirmationStats.deliveredOrders.length === 0) {
       enqueueSnackbar('Aucune livraison confirmée à exporter', { variant: 'warning' });
@@ -607,6 +641,9 @@ export default function DeliveryDailyStatsPage() {
                     </MenuItem>
                     <MenuItem onClick={() => { handleCloseExportMenu(); handleExportExcel(); }}>
                       Exporter Excel
+                    </MenuItem>
+                    <MenuItem onClick={() => { handleCloseExportMenu(); void handleExportMobile(); }}>
+                      Exporter Mobile (.json)
                     </MenuItem>
                   </Menu>
                 </Box>

@@ -148,6 +148,135 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(data);
     }
 
+    if (type === 'mobileExport') {
+      if (!userId) {
+        return NextResponse.json({ error: 'Utilisateur requis' }, { status: 400 });
+      }
+      const dateFrom = searchParams.get('dateFrom') || '';
+      const dateTo = searchParams.get('dateTo') || '';
+      const deliveryPerson = searchParams.get('deliveryPerson') || '';
+      const realizedStatus = searchParams.get('realizedStatus') || '';
+      const clientSearch = searchParams.get('clientSearch') || '';
+      const source = searchParams.get('source') || 'settings';
+
+      const data = db.transaction(() => {
+        const clients = db.prepare(
+          `SELECT id, name, facebookPseudo, phone, address, totalPurchases, totalSpent, updatedAt
+           FROM clients
+           WHERE userId = ?
+           ORDER BY updatedAt DESC`
+        ).all(userId);
+
+        const pendingDeliveries = db.prepare(
+          `SELECT id, orderId, orderNumber, clientName, pendingQuantity, paidAmount, paymentStatus, limitDate, notes, updatedAt
+           FROM pending_deliveries
+           WHERE userId = ?
+           ORDER BY updatedAt DESC`
+        ).all(userId);
+
+        const deliveryDailyStats = db.prepare(
+          `SELECT
+              date(updatedAt) as date,
+              COUNT(*) as pendingCount,
+              COALESCE(SUM(paidAmount), 0) as paidAmount
+           FROM pending_deliveries
+           WHERE userId = ?
+           GROUP BY date(updatedAt)
+           ORDER BY date(updatedAt) DESC
+           LIMIT 60`
+        ).all(userId);
+
+        const topClients = db.prepare(
+          `SELECT
+              clientName,
+              COUNT(*) as ordersCount,
+              COALESCE(SUM(totalAmount), 0) as totalAmount
+           FROM orders
+           WHERE userId = ? AND status != 'cancelled'
+           GROUP BY clientName
+           ORDER BY totalAmount DESC
+           LIMIT 20`
+        ).all(userId);
+
+        let ordersQuery = `SELECT * FROM orders WHERE userId = ?`;
+        const orderParams: (string | number)[] = [userId];
+        if (dateFrom) {
+          ordersQuery += ` AND deliveryDate >= ?`;
+          orderParams.push(dateFrom);
+        }
+        if (dateTo) {
+          ordersQuery += ` AND deliveryDate <= ?`;
+          orderParams.push(dateTo);
+        }
+        if (deliveryPerson) {
+          ordersQuery += ` AND deliveryPerson = ?`;
+          orderParams.push(deliveryPerson);
+        }
+        if (clientSearch) {
+          ordersQuery += ` AND (LOWER(clientName) LIKE ? OR LOWER(orderNumber) LIKE ?)`;
+          const like = `%${clientSearch.toLowerCase()}%`;
+          orderParams.push(like, like);
+        }
+        ordersQuery += ` ORDER BY createdAt DESC`;
+        const orders = db.prepare(ordersQuery).all(...orderParams) as Array<Record<string, unknown>>;
+        const orderItemsByOrder = new Map<string, Array<Record<string, unknown>>>();
+        if (orders.length > 0) {
+          const getItems = db.prepare('SELECT * FROM order_items WHERE orderId = ?');
+          for (const order of orders) {
+            const orderId = String(order.id || '');
+            const items = getItems.all(orderId) as Array<Record<string, unknown>>;
+            orderItemsByOrder.set(orderId, items);
+          }
+        }
+        const mobileOrders = orders.map((order) => ({
+          id: String(order.id || ''),
+          orderNumber: String(order.orderNumber || ''),
+          clientName: String(order.clientName || ''),
+          clientPhone: String(order.clientPhone || ''),
+          deliveryDate: String(order.deliveryDate || ''),
+          shippingAddress: String(order.shippingAddress || ''),
+          status: String(order.status || ''),
+          paymentMethod: String(order.paymentMethod || ''),
+          paymentReference: String(order.paymentReference || ''),
+          deliveryPerson: String(order.deliveryPerson || ''),
+          totalAmount: Number(order.totalAmount || 0),
+          createdAt: String(order.createdAt || ''),
+          items: (orderItemsByOrder.get(String(order.id || '')) || []).map((item) => ({
+            id: String(item.id || ''),
+            productId: String(item.productId || ''),
+            variantId: String(item.variantId || ''),
+            productName: String(item.productName || ''),
+            variantSize: String(item.variantSize || ''),
+            variantColor: String(item.variantColor || ''),
+            quantity: Number(item.quantity || 0),
+            unitPrice: Number(item.unitPrice || 0),
+            totalPrice: Number(item.totalPrice || 0),
+          })),
+        }));
+
+        return {
+          schemaVersion: 1,
+          exportedAt: new Date().toISOString(),
+          userId,
+          exportContext: {
+            source,
+            dateFrom,
+            dateTo,
+            deliveryPersonFilter: deliveryPerson,
+            realizedStatusFilter: realizedStatus,
+            clientSearch,
+          },
+          clients,
+          pendingDeliveries,
+          deliveryDailyStats,
+          orders: mobileOrders,
+          topClients,
+        };
+      })();
+
+      return NextResponse.json(data);
+    }
+
     if (type === 'deliveryLocations') {
       if (!userId) {
         return NextResponse.json({ error: 'Utilisateur requis' }, { status: 400 });
@@ -246,6 +375,7 @@ export async function POST(request: NextRequest) {
       db.transaction(() => {
         db.exec('DELETE FROM order_items');
         db.exec('DELETE FROM orders');
+        db.exec('DELETE FROM pending_deliveries');
         db.exec('DELETE FROM stock_movements');
         db.exec('DELETE FROM production_sewing_entries');
         db.exec('DELETE FROM product_serials');
@@ -255,6 +385,7 @@ export async function POST(request: NextRequest) {
         db.exec('DELETE FROM production_needs');
         db.exec('DELETE FROM production_print_orders');
         db.exec('DELETE FROM live_sessions');
+        db.exec('DELETE FROM delivery_locations');
         db.exec('DELETE FROM activity_logs');
         db.exec('DELETE FROM clients');
         db.exec('DELETE FROM product_variants');

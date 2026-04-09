@@ -50,12 +50,6 @@ export const menuSections: MenuItem[] = [
     title: 'Tableau de bord',
     path: '/dashboard',
     icon: <DashboardIcon />,
-    children: [
-      { title: 'Stats globales stock', path: '/dashboard/stock-stats' },
-      { title: 'Stats globales finance', path: '/dashboard/finance-stats' },
-      { title: 'Stats globales vente', path: '/dashboard/sales-stats' },
-      { title: 'Stats globales production', path: '/dashboard/production-stats' },
-    ],
   },
   {
     title: 'Vente',
@@ -63,7 +57,9 @@ export const menuSections: MenuItem[] = [
     children: [
       { title: 'Vente en live', path: '/live', icon: <LiveTv /> },
       { title: 'Clients', path: '/clients', icon: <PeopleIcon /> },
+      { title: 'Coordonner de client', path: '/sales/client-coordinates', icon: <PeopleIcon /> },
       { title: 'Récapitulation client', path: '/sales/client-recap', icon: <PeopleIcon /> },
+      { title: 'Offre spéciale', path: '/sales/special-offers', icon: <LocalMall /> },
       { title: 'Commande', path: '/orders', icon: <OrdersIcon /> },
       { title: 'Livraison en attente', path: '/sales/pending-deliveries', icon: <LocalShipping /> },
       { title: 'Statistique de livraison journalière', path: '/sales/delivery-daily' },
